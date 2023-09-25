@@ -9,7 +9,7 @@ class SummonersEventWidget extends StatelessWidget {
   final double eventLayoutHeight = 90;
 
   final int teamLogoFlex = 4;
-  final int eventNameAndStateFlex = 5;
+  final int eventNameAndStateFlex = 6;
 
   final double teamLogoSize = 60;
 
@@ -78,7 +78,7 @@ class SummonersEventWidget extends StatelessWidget {
 
   Text getEventDetails(){
     return Text(
-      "${event.league.name}: ${event.blockName} bo: ${event.match.strategy.count}",
+      "${event.league.name}: bo: ${event.match.strategy.count}",
       style: Theme.of(context).textTheme.bodyMedium,
     );
   }
