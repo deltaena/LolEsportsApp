@@ -30,7 +30,7 @@ abstract class BaseBlocBuilder extends StatelessWidget {
   Bloc<BasicEvent, BasicState> getBloc(BuildContext context);
 
   Widget onNotStarted(BuildContext context) { return const Text("notStarted"); }
-  Widget onStarted() { return const Loader(); }
+  Widget onStarted() { return Loader(); }
 
   Widget onKo(KoArgs koArgs) { return Text("ko"); }
   Widget onOk(OkArgs okArgs) { return Text("ok"); }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_network/image_network.dart';
 import 'package:intl/intl.dart';
 
@@ -6,12 +7,12 @@ import '../model.dart' as model;
 
 class SummonersEventWidget extends StatelessWidget {
 
-  final double eventLayoutHeight = 90;
+  final double eventLayoutHeight = 80.h;
 
   final int teamLogoFlex = 4;
   final int eventNameAndStateFlex = 6;
 
-  final double teamLogoSize = 60;
+  final double teamLogoSize = 70.h;
 
 
   final model.SummonersEvent event;
@@ -19,7 +20,7 @@ class SummonersEventWidget extends StatelessWidget {
 
   static late BuildContext context;
 
-  const SummonersEventWidget({super.key, required this.event});
+  SummonersEventWidget({super.key, required this.event});
 
   @override
   Widget build(BuildContext context) {
@@ -32,25 +33,20 @@ class SummonersEventWidget extends StatelessWidget {
     return SizedBox(
         height: eventLayoutHeight,
         child: GestureDetector(
-            child: Column(
+            child: Row(
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      flex: teamLogoFlex,
-                      child: getBlueTeamLogo(),
-                    ),
-                    Expanded(
-                        flex: eventNameAndStateFlex,
-                        child: getEventNameAndState()
-                    ),
-                    Expanded(
-                      flex: teamLogoFlex,
-                      child: getRedTeamLogo(),
-                    ),
-                  ],
+                Expanded(
+                  flex: teamLogoFlex,
+                  child: getBlueTeamLogo(),
                 ),
-                getEventDetails()
+                Expanded(
+                    flex: eventNameAndStateFlex,
+                    child: getEventNameAndState()
+                ),
+                Expanded(
+                  flex: teamLogoFlex,
+                  child: getRedTeamLogo(),
+                ),
               ],
             )
         )

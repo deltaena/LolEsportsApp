@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/views/shapes/base_dragon_painter.dart';
 
 class HextechDragonPainter extends BaseShapePainter {
 
-  int fix = 3;
+  @override
+  double fix = 3.h;
 
 @override
 void paint(Canvas canvas, Size size) {

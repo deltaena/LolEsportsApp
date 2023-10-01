@@ -46,6 +46,7 @@ dependencies:
   tuple: ^2.0.2
   polygon: ^0.1.0
   flutter_animate: ^4.2.0+1
+  flutter_screenutil: ^5.9.0
 
 dev_dependencies:
   flutter_test:

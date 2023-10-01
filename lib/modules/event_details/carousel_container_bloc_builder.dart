@@ -25,7 +25,7 @@ class CarouselContainerBlocBuilder extends BaseBlocBuilder {
   @override
   Widget onNotStarted(BuildContext context) {
     getBloc(context).add(Requested({ "event": summonersEvent }));
-    return const Loader();
+    return Loader();
   }
 
   @override
@@ -34,36 +34,3 @@ class CarouselContainerBlocBuilder extends BaseBlocBuilder {
     return CarouselBlocBuilder(summonersEvent, match);
   }
 }
-
-/*
-class CarouselContainerBlocBuilder extends StatelessWidget {
-  final schedule.SummonersEvent summonersEvent;
-
-  const CarouselContainerBlocBuilder(this.summonersEvent, {super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return BlocBuilder<EDBloc, States>(
-        builder: (context, state) {
-          if(state is NotStarted) {
-            context.read<Bloc>().add(Requested(summonersEvent));
-            return const Text("initializing");
-          }
-
-          if(state is Started) return Loader();
-
-          if(state is Ko) {
-            return Text(
-              "something went wrong ${state.code}: ${state.message}",
-              style: const TextStyle(color: Colors.white),
-            );
-          }
-
-          Match match = (state as Ok).getEventDetails.data.event.match;
-            
-          return CarouselBlocBuilder(summonersEvent, match);
-        }
-    );
-  }
-}
-*/

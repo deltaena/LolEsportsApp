@@ -40,13 +40,15 @@ class Frame {
   factory Frame.fromJson(Map<String, dynamic> json) => Frame(
     rfc460Timestamp: DateTime.parse(json["rfc460Timestamp"]),
     gameState: gameStateValues.map[json["gameState"]]!,
-    blueTeam: Team.fromJson(json["blueTeam"]),
-    redTeam: Team.fromJson(json["redTeam"]),
+    blueTeam: Team.fromJson(json["blueTeam"], true),
+    redTeam: Team.fromJson(json["redTeam"], false),
   );
 
 }
 
 class Team {
+  final bool isBlue;
+
   final int totalGold;
   final int inhibitors;
   final int towers;
@@ -56,6 +58,7 @@ class Team {
   final List<Participant> participants;
 
   Team({
+    required this.isBlue,
     required this.totalGold,
     required this.inhibitors,
     required this.towers,
@@ -65,7 +68,8 @@ class Team {
     required this.participants,
   });
 
-  factory Team.fromJson(Map<String, dynamic> json) => Team(
+  factory Team.fromJson(Map<String, dynamic> json, bool isBlue) => Team(
+    isBlue: isBlue,
     totalGold: json["totalGold"],
     inhibitors: json["inhibitors"],
     towers: json["towers"],
@@ -134,6 +138,10 @@ class Participant {
     currentHealth: json["currentHealth"],
     maxHealth: json["maxHealth"],
   );
+
+  String getKda() => "$kills/$deaths/$assists";
+  String getCs() => creepScore.toString();
+  String getGold() => "${(totalGold / 1000).toStringAsFixed(1)}K";
 }
 
 enum GameState {

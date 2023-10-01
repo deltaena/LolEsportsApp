@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:lol_esports/modules/leagues_fetch/lib.dart' as leagues_f;
 import 'package:lol_esports/modules/schedule/lib.dart' as schedule;
@@ -10,15 +11,15 @@ class DeltaDrawer extends StatelessWidget {
   final int headerLogoFlex = 9;
   final int headerButtonFlex = 3;
 
-  final Decoration drawerHeaderDecoration = const BoxDecoration(
+  final Decoration drawerHeaderDecoration = BoxDecoration(
       border: Border(
-          bottom: BorderSide(color: Colors.white, width: 2)
+          bottom: BorderSide(color: Colors.white, width: 2.h)
       )
   );
 
   final Container appLogo = Container(
     alignment: Alignment.center,
-    child: CustomPaint(size: const Size(100, 100), painter: AppIconPainter(Colors.white)),
+    child: CustomPaint(size: Size(100.h, 100.h), painter: AppIconPainter(Colors.white)),
   );
 
   DeltaDrawer({super.key});

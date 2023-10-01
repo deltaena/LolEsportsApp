@@ -5,7 +5,8 @@ import 'package:lol_esports/views/shapes/base_dragon_painter.dart';
 
 class ChemtechDragonPainter extends BaseShapePainter {
 
-  int fix = 3;
+  @override
+  double fix = 3;
 
 @override
 void paint(Canvas canvas, Size size) {

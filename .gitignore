@@ -141,9 +141,10 @@ app.*.map.json
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
-#.dart_tool/
+.dart_tool/*
 #.packages
-#build/
+**/build/*
+build/*
 # If you're building an application, you may want to check-in your pubspec.lock
 #pubspec.lock
 
@@ -861,3 +862,4 @@ Temporary Items
 # Archives         - https://github.com/github/gitignore/blob/main/Global/Archives.gitignore
 # Backup           - https://github.com/github/gitignore/blob/main/Global/Backup.gitignore
 # JEnv             - https://github.com/github/gitignore/blob/main/Global/JEnv.gitignore
+.flutter-plugins-dependencies

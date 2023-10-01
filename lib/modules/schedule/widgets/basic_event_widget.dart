@@ -1,24 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_network/image_network.dart';
 
 import '../model.dart' as models;
 
 class BasicEventWidget extends StatelessWidget {
 
-  final double basicEventHeight = 70;
+  final double basicEventHeight = 70.h;
 
   final int basicEventLeagueImageFlex = 7;
   final int basicEventLeagueNameFlex = 3;
 
-  final double eventLeagueImageSize = 60;
+  final double eventLeagueImageSize = 60.w;
 
 
   final models.BasicEvent basicEvent;
 
   static late BuildContext context;
 
-  const BasicEventWidget({super.key, required this.basicEvent});
+  BasicEventWidget({super.key, required this.basicEvent});
 
   @override
   Widget build(BuildContext context) {
