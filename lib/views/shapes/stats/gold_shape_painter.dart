@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/views/shapes/base_dragon_painter.dart';
 
 class GoldShapePainter extends BaseShapePainter {
 
   @override
-  int fix = 3;
+  double fix = 3.h;
 
   @override
   Size originalSize = const Size(10, 10);

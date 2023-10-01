@@ -5,9 +5,6 @@ import 'package:lol_esports/models/basic_event.dart';
 import 'package:lol_esports/models/basic_state.dart';
 import 'package:lol_esports/modules/leagues_view/bloc.dart';
 
-import '../event_details/model.dart';
-import '../leagues_fetch/model.dart';
-
 import 'package:lol_esports/modules/leagues_fetch/lib.dart' as lf;
 
 

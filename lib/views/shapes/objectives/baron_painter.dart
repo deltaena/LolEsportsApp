@@ -1,17 +1,20 @@
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/views/shapes/base_dragon_painter.dart';
 
 class BaronPainter extends BaseShapePainter {
+
+  @override
+  final Size originalSize = Size(26.h, 26.h);
 
   final Color color;
 
   BaronPainter(this.color);
 
-
   @override
-void paint(Canvas canvas, Size size) {
+  void paint(Canvas canvas, Size size) {
 
   customSize = Size((originalSize.width * size.height) / originalSize.height, size.height);
 

@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 abstract class BaseShapePainter extends CustomPainter {
 
-  int fix = 0;
+  double fix = 0.h;
 
-  final Size originalSize = const Size(14, 18);
+  final Size originalSize = Size(14.h, 18.h);
   late Size customSize;
 
   customMoveTo(Path path, double x, double y){
