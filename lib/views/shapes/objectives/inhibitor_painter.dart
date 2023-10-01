@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/views/shapes/base_dragon_painter.dart';
 
 class InhibitorPainter extends BaseShapePainter {
+
+  @override
+  final Size originalSize = Size(26.h, 26.h);
 
   final Color color;
 

@@ -24,12 +24,11 @@ class ListBlocBuilder extends BaseBlocBuilder {
   @override
   Widget onNotStarted(BuildContext context) {
     getBloc(context).add(Requested(const {  }));
-    return const Loader();
+    return Loader();
   }
 
   @override
   Widget onOk(OkArgs okArgs) {
-
     List<League> leagues = okArgs.results["leagues"];
 
     return ListView.separated(

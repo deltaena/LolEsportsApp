@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../shapes/icons/app_icon_painter.dart';
 
@@ -6,7 +7,7 @@ class DeltaAppBar extends AppBar {
 
   @override
   final title = CustomPaint(
-      size: const Size(60, 60),
+      size: Size(60.h, 60.h),
       painter: AppIconPainter(Colors.white)
   );
 

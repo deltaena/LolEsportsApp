@@ -21,7 +21,7 @@ class ListBlocBuilder extends BaseBlocBuilder {
   @override
   Widget onNotStarted(BuildContext context) {
     getBloc(context).add(Requested({ "leaguesIds": List<int>.empty() }));
-    return const Loader();
+    return Loader();
   }
 
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/modules/leagues_view/league_selected_indicator_bloc_builder.dart';
 
 import 'package:lol_esports/modules/leagues_view/lib.dart';
@@ -7,7 +8,7 @@ import 'package:lol_esports/modules/leagues_fetch/lib.dart' as lf;
 
 class ListElement extends StatelessWidget {
 
-  final double leagueElementHeight = 80;
+  final double leagueElementHeight = 80.h;
 
   final int leagueIconFlex = 4;
   final int leagueNameFlex = 15;
@@ -16,7 +17,7 @@ class ListElement extends StatelessWidget {
 
   final lf.League league;
 
-  const ListElement(this.league, {super.key});
+  ListElement(this.league, {super.key});
 
   static late BuildContext context;
 

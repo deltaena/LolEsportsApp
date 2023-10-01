@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lol_esports/modules/leagues_view/bloc.dart';
 
 import '../../../models/basic_event.dart';
@@ -24,7 +25,7 @@ class ButtonBlocBuilder extends StatelessWidget {
           Navigator.pop(context)
         },
         child: SizedBox( // give width
-          width: 100,
+          width: 100.w,
           child: Card( // round content
             color: Colors.white,
             child: buttonText(context),

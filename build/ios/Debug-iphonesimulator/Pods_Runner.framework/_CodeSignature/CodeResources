@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		y8YKedYTNEpd6OPNN46oZQ2ix1M=
+		</data>
 		<key>Headers/Pods-Runner-umbrella.h</key>
 		<data>
 		qwiYDWd9StHsFttCKLnCkouErV8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zMGrVEt/A1yvZWLGolStoKNKw10=
+		+xCNGFeaXvnomDag1Hmq48EcEgY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

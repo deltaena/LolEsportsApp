@@ -33,9 +33,9 @@ class Constants {
     }
   }
 
-  static Tuple2<BaseShapePainter, String> getObjectivePainterAndCount(String objective, Team team, bool isBlue){
+  static Tuple2<BaseShapePainter, String> getObjectivePainterAndCount(String objective, Team team){
 
-    Color color = isBlue ? Colors.blueAccent : Colors.redAccent;
+    Color color = team.isBlue ? Colors.blueAccent : Colors.redAccent;
 
     switch(objective) {
       case "inhibitor":
