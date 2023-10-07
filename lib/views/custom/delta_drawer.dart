@@ -8,8 +8,8 @@ import '../shapes/icons/app_icon_painter.dart';
 
 class DeltaDrawer extends StatelessWidget {
 
-  final int headerLogoFlex = 9;
-  final int headerButtonFlex = 3;
+  final int headerLogoFlex = 10;
+  final int headerButtonFlex = 4;
 
   final Decoration drawerHeaderDecoration = BoxDecoration(
       border: Border(

@@ -20,7 +20,8 @@ class ParticipantIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     ParticipantIcon.context = context;
 
-    return Stack(
+    return
+      Stack(
         children: [
           getChampionImage(),
           getChampionBorder(),
