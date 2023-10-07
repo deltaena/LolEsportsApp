@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		QEeDpqcAHThP/ZDjHyCLbuglw88=
+		Zdt90PPgSdIcZs6wCgaz1FZadGc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		d1T1llBaNzuF5VwQ3nF/KOEqFos=
+		l95uw9SygHDfDC7FLTUha9cQdv8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		ZyUHqr3Hd/CowLIyV+e0c355Wbk=
+		Iq9YhGL6VTiB47eYYcssquYToGU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/corona.png</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		yrRtVoc+LuWvvO7exHZUv5MEB2I=
+		wCpC/rtRrOFP2VD8FtsVI2WYRQI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -184,6 +184,18 @@
 		<data>
 		nMTZkkm9uooDDa8A2YJSyK73oP8=
 		</data>
+		<key>Frameworks/flutter_widgetkit.framework/Info.plist</key>
+		<data>
+		8HBPqzul8VxKlcxtnx0WKkwSuNA=
+		</data>
+		<key>Frameworks/flutter_widgetkit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		OO/Hb7yKokqaGpd83NxRA+qrg7U=
+		</data>
+		<key>Frameworks/flutter_widgetkit.framework/flutter_widgetkit</key>
+		<data>
+		fkD2yBhn3OdBV/ao7BB1J30pC70=
+		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
 		a/V/lA2OTQSB9YIgDoK3FGrH5k8=
@@ -215,6 +227,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/live_gameExtension.appex/Info.plist</key>
+		<data>
+		IkD/juPScWN5nfejLrx0magG7MY=
+		</data>
+		<key>PlugIns/live_gameExtension.appex/Metadata.appintents/extract.actionsdata</key>
+		<data>
+		hA9KyCXOM2YaamqyMiyw+oEV248=
+		</data>
+		<key>PlugIns/live_gameExtension.appex/Metadata.appintents/version.json</key>
+		<data>
+		5gmL5nUt9kmH2N/JaR6rntCwxLY=
+		</data>
+		<key>PlugIns/live_gameExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		WtKZtDoHT7JwoatSrdP9rlnEqPk=
+		</data>
+		<key>PlugIns/live_gameExtension.appex/live_gameExtension</key>
+		<data>
+		jkXLckx0ULpalbZdjT5CZUA1jG8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -293,7 +325,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j1WtxN52AZLsPQyG9CXoNGp4wZKhOjAeGaixvFI4aIg=
+			yhmAK4NLPfhZ8dPOFp2k5qxka8+il4dC8cHHm9tZfAg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -307,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZ1yZGwZwxjWvA/PUPjmJ5XVTPrvRwqNw32qoMDmoy4=
+			lLQSWBZrsnzu4eVsLyzGg0RL4jW/2RFBC6MWZoi5UZ4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -335,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmZAgA2/zzjQDncfbKQfsUK3DVlhPO3LNnF1v2n8s98=
+			adtz5czs+Mp3bbibYCCRdEe4kUwiusEAgJalgr2MmQI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/corona.png</key>
@@ -363,7 +395,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aVOEvYz6NyVcSY7aP5wVsQ0WbqrSHsoYofuITOpB6To=
+			m1sgoxp0loqctUYuLydMIm8xIoFAEorAlbl6hEhNDEU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -534,6 +566,27 @@
 			rETMw/Yb9jC7IPuAQ9hs/kyJldBrRgCEQA20XXBJezA=
 			</data>
 		</dict>
+		<key>Frameworks/flutter_widgetkit.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Erv8JIxtCB9wTPxqZYCGDX+Y5Rwmb6Payq0MIFgYYbA=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_widgetkit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tS4gWUvKB9uxJGD8ukZoBbESxhCC9UW3+3olL1e2efA=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_widgetkit.framework/flutter_widgetkit</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8DSSBkDPvmqyvs4tsMzlOtQZW6jLE/cDKYWm6ag+S+Q=
+			</data>
+		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -574,6 +627,41 @@
 			<key>hash2</key>
 			<data>
 			l15wVeuK/4Zc/na7PPIo8ngAwjFU0pKtPvjTElxnRzw=
+			</data>
+		</dict>
+		<key>PlugIns/live_gameExtension.appex/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kr/SNRz+F1W0LupJ1p0wSXqcHPpaXzJvISLjWzEI+H4=
+			</data>
+		</dict>
+		<key>PlugIns/live_gameExtension.appex/Metadata.appintents/extract.actionsdata</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S+JbOmJv6ywTG1FKesx5S0rr1/19kp0x3OjVCd6fJ8k=
+			</data>
+		</dict>
+		<key>PlugIns/live_gameExtension.appex/Metadata.appintents/version.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cG6iFb/rAMRIDAfpRQoWlGyJwUT9CrZkacy6zW5zUGU=
+			</data>
+		</dict>
+		<key>PlugIns/live_gameExtension.appex/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fS6dlbjoxv9Mw/e5np7Ey2GI/1RhlwOdD951BJ/xUxY=
+			</data>
+		</dict>
+		<key>PlugIns/live_gameExtension.appex/live_gameExtension</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YLD/bes/952P+t+qQ6pDLjUH1eYQFYrBm8PMM7yhO94=
 			</data>
 		</dict>
 	</dict>

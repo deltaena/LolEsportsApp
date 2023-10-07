@@ -122,6 +122,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_widgetkit",
+      "rootUri": "file:///Users/danielsuarezgarcia/.pub-cache/hosted/pub.dev/flutter_widgetkit-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/danielsuarezgarcia/.pub-cache/hosted/pub.dev/http-1.1.0",
       "packageUri": "lib/",
@@ -404,7 +410,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-10-07T07:37:35.497450Z",
+  "generated": "2023-10-07T08:34:19.512672Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }

@@ -37,7 +37,7 @@ class ListBlocBuilder extends BaseBlocBuilder {
       separatorBuilder: (BuildContext context, int index) => const Divider(),
       itemCount: events.length,
       itemBuilder: (BuildContext context, int index) {
-        return ListElement(event: events[index]);
+        return ListElement(event: events[index], index: index);
       },
     );
   }

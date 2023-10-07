@@ -13,8 +13,26 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		C3FC77592AD14BF400D2DECB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C370BF4D2ABC67A800588A7A /* WidgetKit.framework */; };
+		C3FC775A2AD14BF400D2DECB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C370BF4F2ABC67A800588A7A /* SwiftUI.framework */; };
+		C3FC775D2AD14BF400D2DECB /* live_gameBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC775C2AD14BF400D2DECB /* live_gameBundle.swift */; };
+		C3FC775F2AD14BF400D2DECB /* live_gameLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC775E2AD14BF400D2DECB /* live_gameLiveActivity.swift */; };
+		C3FC77612AD14BF400D2DECB /* live_game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC77602AD14BF400D2DECB /* live_game.swift */; };
+		C3FC77632AD14BF400D2DECB /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC77622AD14BF400D2DECB /* AppIntent.swift */; };
+		C3FC77652AD14BF600D2DECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FC77642AD14BF600D2DECB /* Assets.xcassets */; };
+		C3FC77692AD14BF600D2DECB /* live_gameExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C3FC77582AD14BF400D2DECB /* live_gameExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C51166AF49DFD39B13E8301F /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBB5D51F15FE553C0DDBCB4 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3FC77672AD14BF600D2DECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3FC77572AD14BF400D2DECB;
+			remoteInfo = live_gameExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -33,6 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				C3FC77692AD14BF600D2DECB /* live_gameExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +77,15 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C370BF4D2ABC67A800588A7A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		C370BF4F2ABC67A800588A7A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C3FC77582AD14BF400D2DECB /* live_gameExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = live_gameExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FC775C2AD14BF400D2DECB /* live_gameBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = live_gameBundle.swift; sourceTree = "<group>"; };
+		C3FC775E2AD14BF400D2DECB /* live_gameLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = live_gameLiveActivity.swift; sourceTree = "<group>"; };
+		C3FC77602AD14BF400D2DECB /* live_game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = live_game.swift; sourceTree = "<group>"; };
+		C3FC77622AD14BF400D2DECB /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		C3FC77642AD14BF600D2DECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3FC77662AD14BF600D2DECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FC776E2AD14E9400D2DECB /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		C3FC776F2AD14ECF00D2DECB /* live_gameExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = live_gameExtension.entitlements; sourceTree = "<group>"; };
 		CBBB5D51F15FE553C0DDBCB4 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +95,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51166AF49DFD39B13E8301F /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FC77552AD14BF400D2DECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC775A2AD14BF400D2DECB /* SwiftUI.framework in Frameworks */,
+				C3FC77592AD14BF400D2DECB /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +144,10 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				C3FC776F2AD14ECF00D2DECB /* live_gameExtension.entitlements */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				C3FC775B2AD14BF400D2DECB /* live_game */,
 				97C146EF1CF9000F007C117D /* Products */,
 				3B53FDE40AD136101360BF90 /* Pods */,
 				10A4BC3D50DBD7304DF6015A /* Frameworks */,
@@ -119,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				C3FC77582AD14BF400D2DECB /* live_gameExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +166,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				C3FC776E2AD14E9400D2DECB /* Runner.entitlements */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -136,6 +177,19 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		C3FC775B2AD14BF400D2DECB /* live_game */ = {
+			isa = PBXGroup;
+			children = (
+				C3FC775C2AD14BF400D2DECB /* live_gameBundle.swift */,
+				C3FC775E2AD14BF400D2DECB /* live_gameLiveActivity.swift */,
+				C3FC77602AD14BF400D2DECB /* live_game.swift */,
+				C3FC77622AD14BF400D2DECB /* AppIntent.swift */,
+				C3FC77642AD14BF600D2DECB /* Assets.xcassets */,
+				C3FC77662AD14BF600D2DECB /* Info.plist */,
+			);
+			path = live_game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,18 +205,36 @@
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
-				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				927E37FD957A4D07D1375BAE /* [CP] Embed Pods Frameworks */,
 				C370BF612ABC67AA00588A7A /* Embed Foundation Extensions */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3FC77682AD14BF600D2DECB /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C3FC77572AD14BF400D2DECB /* live_gameExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FC776D2AD14BF600D2DECB /* Build configuration list for PBXNativeTarget "live_gameExtension" */;
+			buildPhases = (
+				C3FC77542AD14BF400D2DECB /* Sources */,
+				C3FC77552AD14BF400D2DECB /* Frameworks */,
+				C3FC77562AD14BF400D2DECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = live_gameExtension;
+			productName = live_gameExtension;
+			productReference = C3FC77582AD14BF400D2DECB /* live_gameExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -171,13 +243,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					C3FC77572AD14BF400D2DECB = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -195,6 +270,7 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				C3FC77572AD14BF400D2DECB /* live_gameExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +284,14 @@
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FC77562AD14BF400D2DECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC77652AD14BF600D2DECB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +380,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3FC77542AD14BF400D2DECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC775F2AD14BF400D2DECB /* live_gameLiveActivity.swift in Sources */,
+				C3FC77632AD14BF400D2DECB /* AppIntent.swift in Sources */,
+				C3FC77612AD14BF400D2DECB /* live_game.swift in Sources */,
+				C3FC775D2AD14BF400D2DECB /* live_gameBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3FC77682AD14BF600D2DECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3FC77572AD14BF400D2DECB /* live_gameExtension */;
+			targetProxy = C3FC77672AD14BF600D2DECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -378,7 +481,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -514,7 +619,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -538,7 +645,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -553,6 +662,123 @@
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
+		};
+		C3FC776A2AD14BF600D2DECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = live_gameExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = live_game/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = live_game;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltaena.lolEsports.live-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3FC776B2AD14BF600D2DECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = live_gameExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = live_game/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = live_game;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltaena.lolEsports.live-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3FC776C2AD14BF600D2DECB /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = live_gameExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JX5HCSMVT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = live_game/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = live_game;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deltaena.lolEsports.live-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
 		};
 /* End XCBuildConfiguration section */
 
@@ -573,6 +799,16 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FC776D2AD14BF600D2DECB /* Build configuration list for PBXNativeTarget "live_gameExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FC776A2AD14BF600D2DECB /* Debug */,
+				C3FC776B2AD14BF600D2DECB /* Release */,
+				C3FC776C2AD14BF600D2DECB /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

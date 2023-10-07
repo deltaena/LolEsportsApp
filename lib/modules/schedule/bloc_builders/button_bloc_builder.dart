@@ -19,18 +19,15 @@ class ButtonBlocBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-        onTap: () => {
-          context.read<schedule.SBloc>().add(Requested({ "leaguesIds": context.read<LVBloc>().selectedLeaguesIds })),
-          Navigator.pop(context)
-        },
-        child: SizedBox(
-          width: 80.w,
-          child: Card(
-            color: Colors.white,
-            child: buttonText(context),
-          ),
-        )
+    return  ElevatedButton(
+      onPressed: () {
+        context.read<schedule.SBloc>().add(Requested({ "leaguesIds": context.read<LVBloc>().selectedLeaguesIds }));
+        Navigator.pop(context);
+      },
+      child: Card(
+        color: Colors.white,
+        child: buttonText(context),
+      ),
     );
   }
 }

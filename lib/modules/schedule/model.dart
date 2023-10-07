@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
+
 Schedule getSchedulesFromJson(String str) => GetSchedule.fromJson(json.decode(str)).data.schedule;
 
 class GetSchedule {

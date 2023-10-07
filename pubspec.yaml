@@ -47,6 +47,7 @@ dependencies:
   polygon: ^0.1.0
   flutter_animate: ^4.2.0+1
   flutter_screenutil: ^5.9.0
+  flutter_widgetkit: ^1.0.3
 
 dev_dependencies:
   flutter_test:
