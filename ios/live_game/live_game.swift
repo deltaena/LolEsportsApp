@@ -7,32 +7,33 @@
 
 import WidgetKit
 import SwiftUI
+import URLImage
 
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), flutterData: nil)
     }
 
-    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
+    func snapshot(for configuration: WidgetIntent, in context: Context) async -> SimpleEntry {
         SimpleEntry(date: Date(), flutterData: nil)
     }
     
-    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
+    func timeline(for configuration: WidgetIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
 
         let sharedDefaults = UserDefaults.init(suiteName: "group.deltaena")
         var flutterData: FlutterData? = nil
-
+        
         if(sharedDefaults != nil) {
-            do {
-              let shared = sharedDefaults?.string(forKey: "event_data")
-              if(shared != nil){
-                let decoder = JSONDecoder()
-                flutterData = try decoder.decode(FlutterData.self, from: shared!.data(using: .utf8)!)
-              }
-            } catch {
-              print(error)
-            }
+            let teams = sharedDefaults?.dictionary(forKey: "event_data")
+            
+            let blueTeamDic = teams!["blueTeam"] as? Dictionary<String, Any>
+            let blueTeam: Team = Team(json: blueTeamDic!)
+                
+            let redTeamDic = teams!["redTeam"] as? Dictionary<String, Any>
+            let redTeam: Team = Team(json: redTeamDic!)
+                
+            flutterData = FlutterData(blueTeam: blueTeam, redTeam: redTeam)
         }
 
         let currentDate = Date()
@@ -44,8 +45,9 @@ struct Provider: AppIntentTimelineProvider {
     }
 }
 
-struct FlutterData: Decodable, Hashable {
-    let text: String
+struct FlutterData: Hashable {
+    let blueTeam: Team
+    let redTeam: Team
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -56,20 +58,38 @@ struct SimpleEntry: TimelineEntry {
 struct live_gameEntryView : View {
     var entry: Provider.Entry
     
-    private var FlutterDataView: some View {
-      Text(entry.flutterData!.text)
+    var body: some View {
+        if (entry.flutterData != nil){
+            VStack{
+                HStack{
+                    VStack{
+                        NetworkImageView(url: URL(string: entry.flutterData!.blueTeam.image)!).aspectRatio(contentMode: .fit)
+                        Text(entry.flutterData!.blueTeam.code)
+                    }
+                    Text("VS")
+                    VStack{
+                        NetworkImageView(url: URL(string: entry.flutterData!.redTeam.image)!).aspectRatio(contentMode: .fit)
+                        Text(entry.flutterData!.redTeam.code)
+                    }
+                }
+            }
+        }
+        else {
+            Text("unexpected error")
+        }
     }
-    
-    private var NoDataView: some View {
-      Text("No Data found! Go to the Flutter App")
-    }
+}
+
+struct NetworkImageView: View {
+    let url: URL
     
     var body: some View {
-      if(entry.flutterData == nil) {
-        NoDataView
-      } else {
-        FlutterDataView
-      }
+        if let data = try? Data(contentsOf: url), let uiImage = UIImage(data: data) {
+            Image(uiImage: uiImage)
+                .resizable()
+        } else {
+            Image(systemName: "person")
+        }
     }
 }
 
@@ -77,27 +97,13 @@ struct live_game: Widget {
     let kind: String = "live_game"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+        AppIntentConfiguration(kind: kind, intent: WidgetIntent.self, provider: Provider()) { entry in
             live_gameEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
     }
 }
 
-
-extension ConfigurationAppIntent {
-    fileprivate static var smiley: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
-        return intent
-    }
-    
-    fileprivate static var starEyes: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
-        return intent
-    }
-}
 
 #Preview(as: .systemSmall) {
     live_game()

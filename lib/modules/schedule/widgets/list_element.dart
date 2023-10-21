@@ -26,20 +26,22 @@ class ListElement extends StatelessWidget {
   }
 
   Dismissible getSummonerEvent(){
+    schedule.SummonersEvent summonersEvent = event as schedule.SummonersEvent;
     return Dismissible(
         key: Key("$index"),
         background: Container(color: Colors.green),
         secondaryBackground: Container(color: Colors.red),
         confirmDismiss: (direction) async {
+          schedule.Team blueTeam = summonersEvent.match.teams[0];
+          schedule.Team redTeam = summonersEvent.match.teams[1];
 
-          String eventText = "${(event as schedule.SummonersEvent).match.teams[0].name} vs ${(event as schedule.SummonersEvent).match.teams[1].name}";
-          WidgetKit.setItem('event_data', jsonEncode(FlutterWidgetData(eventText)), 'group.deltaena');
+          WidgetKit.setItem('event_data', FlutterWidgetData(blueTeam: blueTeam, redTeam: redTeam).toJson(), 'group.deltaena');
           WidgetKit.reloadAllTimelines();
 
           return false;
         },
         child: InkWell(
-            child: SummonersEventWidget(event: event as schedule.SummonersEvent),
+            child: SummonersEventWidget(event: summonersEvent),
             onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => event_details.Page(event as schedule.SummonersEvent))),
         )
     );

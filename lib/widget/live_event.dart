@@ -1,13 +1,24 @@
+import 'dart:convert';
+
+import '../modules/schedule/model.dart';
+
 class FlutterWidgetData {
-  final String text;
+  final Team blueTeam;
+  final Team redTeam;
 
-  FlutterWidgetData(this.text);
+  FlutterWidgetData({
+    required this.blueTeam,
+    required this.redTeam
+  });
 
-  FlutterWidgetData.fromJson(Map<String, dynamic> json)
-      : text = json['text'];
+  factory FlutterWidgetData.fromJson(Map<String, dynamic> json) => FlutterWidgetData(
+    blueTeam: json['blueTeam'],
+    redTeam: json['redTeam']
+  );
 
   Map<String, dynamic> toJson() =>
       {
-        'text': text,
+        'blueTeam': blueTeam.toJson(),
+        'redTeam': redTeam.toJson()
       };
 }

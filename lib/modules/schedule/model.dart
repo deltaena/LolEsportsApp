@@ -217,6 +217,14 @@ class Team {
     result: json["result"] == null ? null : Result.fromJson(json["result"]),
     record: json["record"] == null ? null : Record.fromJson(json["record"]),
   );
+
+  Map<String, dynamic> toJson() => {
+    "name": name,
+    "code": code,
+    "image": image,
+    "result": result!.toJson(),
+    "record": record!.toJson(),
+  };
 }
 
 class Record {
@@ -252,6 +260,11 @@ class Result {
     outcome: json["outcome"] == null ? Outcome.notPlayed : outcomeValues.map[json["outcome"]]!,
     gameWins: json["gameWins"],
   );
+
+  Map<String, dynamic> toJson() => {
+    "outcome": outcome.name,
+    "gameWins": gameWins,
+  };
 }
 
 enum Outcome {
